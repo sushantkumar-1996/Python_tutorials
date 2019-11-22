@@ -45,10 +45,27 @@ print(str5)
 printing Strings with single and double quotes in it causes SyntaxError because String already contains Single and Double
  Quotes and hence cannot be printed with the use of either of these So to print such string either triple quotes or Escape
  sequences can be used
- 
- 
-
-"""
+ """
+# Initial String
+String1 = '''I'm a "Geek"'''
+print("Initial String with use of Triple Quotes: ") 
+print(String1) 
+  
+# Escaping Single Quote  
+String1 = 'I\'m a "Geek"'
+print("\nEscaping Single Quote: ") 
+print(String1) 
+  
+# Escaping Doule Quotes 
+String1 = "I'm a \"Geek\""
+print("\nEscaping Double Quotes: ") 
+print(String1) 
+  
+# Printing Paths with the  
+# use of Escape Sequences 
+String1 = "C:\\Python\\Geeks\\"
+print("\nEscaping Backslashes: ") 
+print(String1)
 
 
 
