@@ -66,7 +66,31 @@ print(String1)
 String1 = "C:\\Python\\Geeks\\"
 print("\nEscaping Backslashes: ") 
 print(String1)
+      
+      
+      
+"""Formatting of strings--can be formatted using format() method , contains curly braces as placeholders which can hold arguments 
+according to position or keyword to specify the order"""
 
+Str1 = "{} {} {}".format("Hello", "World", "Hi")
+print(Str1)  # printing in default order
 
+Str2 = "{2} {0} {1}".format("Geeks", "For", "Life")
+print(Str2)  # printing in positional format
 
+Str3 = "{a} {b} {c}".format(a="Geeks", b="For", c="Life")
+print(Str3)
+
+"""Formatting of Integers"""
+strr1 = "{0:b}".format(16)
+print("Binary representation of 16 is ")
+print(strr1)
+
+"""Formatting of Floats"""
+strr2 = "{0:e}".format(165.7674)
+print(strr2)
+
+"""Rounding Off Integers"""
+strr3 = "{0:.2f}".format(1/6)
+print(strr3)
 
