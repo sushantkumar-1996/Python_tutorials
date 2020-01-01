@@ -94,3 +94,51 @@ print(strr2)
 strr3 = "{0:.2f}".format(1/6)
 print(strr3)
 
+"""Different methods under Strings"""
+"""String Capitalize() method --Capitalize method converts first character of the string into uppercase without 
+altering the whole string , method signature- capitalize(), no parameter is required, returns the modified string
+if the string contains any special character as first character no change is done to that character, if first character
+is already capital then no change is done to the string
+Example:-"""
+
+print("Example for String capitalize method")
+strcap = "hello world"
+print(strcap)
+print(strcap.capitalize())
+
+"""Python Casefold() method--returns a lowercase copy of the string except it removes all case distinctions 
+present in the string, method signature--casefold(), no parameters are required, returns lowercase string
+Example:--"""
+print("Exapmle for casefold method")
+strcase = "HELLOWORLD"
+strcase1 = "HELLOWORLD-β"
+strcase2 = "HelloWorld"
+print(strcase)
+print(strcase.casefold())
+print(strcase1.casefold())
+print(strcase2.casefold())# β is equivalent to ss
+
+"""Python String center() method -- Python center method alligns string to center by by filling paddings left and right
+of string, signature--center(width[,fillchar]), parameters- width(required), fillchar(optional)-responsible for 
+filling left and right padding of the string , return type- returns modified string, Example:--"""
+
+print("Example for center method")
+strcenter = "Hello World"
+print(strcenter)
+print(strcenter.center(10))  # by default fillchar is applied , we are passing only width
+print(strcenter.center(20, '#'))  # fills the padding by #
+
+"""Python String count() method-- returns the number of occurences of substrings in the specified range, parameters
+sub(required) = substring, start(optional) = start index of range, end(optional) = last index of range
+signature = count(sub[, start[, end]]), return number of occurences of substring in range, Example:"""
+
+print("Example for count method")
+strcount = "Helllo Worllld"
+print(strcount)
+print(strcount.count('l'))
+print(strcount.count('l', 3))
+print(strcount.count('l', 3, 7))
+
+
+
+
